@@ -1,6 +1,8 @@
-build/
+./build/*
 
 # Compiled Object files
+
+
 *.slo
 *.lo
 *.o
@@ -28,4 +30,3 @@ build/
 *.exe
 *.out
 *.app
-
