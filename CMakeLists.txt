@@ -4,6 +4,8 @@ cmake_minimum_required(VERSION 2.8)
 #project
 project(cppfreestyle)
 
+add_subdirectory(cci-cpp-expansion)
+
 #cpp flags
 set(CMAKE_CXX_FLAGS_DEBUG "-Wall -g -rdynamic -O0  -Qunused-arguments  -DDEBUG -std=c++14")
 set(CMAKE_CXX_FLAGS_RELEASE "-Wall -O3  -rdynamic -Qunused-arguments  -DNDEBUG -std=c++14")
@@ -21,6 +23,9 @@ add_executable( cpp_free_style cpp_free_style.cpp )
 
 #link
 target_link_libraries(cpp_free_style -lboost_system -lboost_thread  -lpthread)
+
+install (DIRECTORY include/ 
+         DESTINATION include/cci )
 
 
 

@@ -1,0 +1,1 @@
+/cci/dev_t/bin/clang++   -Wall -g -rdynamic -O0  -Qunused-arguments  -DDEBUG -std=c++14   CMakeFiles/cpp_free_style.dir/cpp_free_style.cpp.o  -o cpp_free_style -rdynamic -lboost_system -lboost_thread -lpthread 
